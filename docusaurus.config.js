@@ -14,15 +14,9 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Sunbangyan233', // Usually your GitHub org/user name.
-  projectName: 'SunApps-site', // Usually your repo name.
+  organizationName: 'Sunbangyan233',
+  projectName: 'SunApps-site',
   trailingSlash: false,
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
@@ -54,21 +48,21 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'SunApps',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'SunApps Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'index',
             position: 'left',
             label: 'Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Sunbangyan233/SunApps-site/',
             label: 'GitHub',
             position: 'right',
           },
@@ -81,8 +75,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'App下载',
+                to: '/docs/index',
               },
             ],
           },
@@ -116,5 +110,5 @@ const config = {
       },
     ],
   ],
-};
+}; //搜索插件
 module.exports = config;
